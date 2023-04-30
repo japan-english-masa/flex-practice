@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>flex-prac</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="https://kit.fontawesome.com/f4ecd71f58.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+   <div class="header">
+      <div class="header-logo">プログラミングひろば</div>
+      <div class="header-inquiry">
+         <a href="https://twitter.com/Miwa_web_and_AI" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-twitter"></i>ミワ_Miwa
+         </a>
+      </div>
+   </div>
+
+   <article class="overall-article">
+      <h1>Display-Flex</h1>
+      <div class="updated">更新日：<time id="modify"></time></div>
+
+      <p class="head-description">flexの練習で作ったものを置いています。</p>
+
+      <!-- ↑↑↑定型↑↑↑ -->
+
+      <!-- 動画サイト風、レスポンシブデザイン -->
+      <section id="first">
+         <div class="flex-number">No.1</div>
+
+         <div class="n1-header">
+            <div class="n1-header-logo">
+               <div class="n1-header-logo-purple">
+                  <div class="n1-header-logo-white"></div>
+               </div>
+               <div class="h1-header-logo-text">Mtube</div>
+            </div>
+
+            <div class="n1-header-search"><i class="fa-solid fa-magnifying-glass"></i></div>
+
+         </div>
+
+
+         <div class="n1-screen">
+            <div class="n1-screen-left">&nbsp;-15</div>
+            <div class="n1-screen-center"></div>
+            <div class="n1-screen-right">&nbsp;+15</div>
+
+            <div class="n1-screen-setting">
+               <div class="n1-screen-setting-timebar">
+                  <div class="n1-screen-setting-timebar-purple">
+                  </div>
+               </div>
+            </div>
+         </div>
+
+
+
+         <div id="n1-pc-column">
+
+            <div id="n1-pc-column-left">
+               <div class="n1-title">
+                  <div class="n1-title-title"> Me at the house【SUBSCIRIBE ME】<br><span>250M views &nbsp;&nbsp; 18 years
+                        ago</span>
+                  </div>
+               </div>
+
+
+               <div class="n1-author-marks">
+                  <div class="n1-author">
+                     <img src="/mystudy/img/白い犬.png" alt="dog">
+                     <div class="n1-author-name">ミワ_Miwa<span>3.3M</span></div>
+
+                     <div class="n1-author-subscribe">Subscribe</div>
+                  </div>
+                  <div class="n1-author-good"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;13M</div>
+                  <div class="n1-author-bad"><i class="fa-regular fa-thumbs-up"></i>&nbsp;&nbsp;&nbsp;&nbsp;0</div>
+                  <div class="n1-author-share"><i class="fa-solid fa-share"></i>&nbsp;&nbsp;Share</div>
+                  <div class="n1-author-download"><i class="fa-solid fa-arrow-down-long"></i>&nbsp;&nbsp;Download</div>
+                  <div class="n1-author-flag"><i class="fa-regular fa-flag"></i>&nbsp;&nbsp;Report</div>
+                  <div class="n1-author-more"><span>…</span></div>
+               </div>
+
+
+               <div class="n1-comments-line"></div>
+               <div class="n1-comments">
+
+                  <div class="n1-comments-comment"><span>Comments</span></div>
+                  <div class="n1-comments-arrow"><i class="fa-solid fa-chevron-down"></i></div>
+               </div>
+               <div class="n1-comments-line"></div>
+               <div class="n1-comments-after-space"></div>
+
+
+               <div class="n1-comments-contents">
+                  <div class="n1-comments-you">
+                     <img src="/mystudy/img/happy-1836445_640.jpg" alt="you">
+                     <textarea placeholder="&nbsp;Add your comment!"></textarea>
+                     <div class="n1-comments-input-container">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                        <input type="submit" value="">
+                     </div>
+                  </div>
+
+
+
+                  <div class="n1-comments-other other-first">
+                     <img src="/mystudy/img/日本人.png" alt="日本人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">Dorothy</span><span
+                           class="n1-comments-other-text-date">4 months ago</span><br><span
+                           class="n1-comments-other-text-writing">cool! I've never seen such a great video in
+                           Mtube!!!</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/黒人.png" alt="黒人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">dodo</span><span
+                           class="n1-comments-other-text-date">1 month ago</span><br><span
+                           class="n1-comments-other-text-writing">Run, run, run!!! Let's eat meat!!</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/白猫.png" alt="白猫" width="40">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">Cheshire
+                           cat</span><span class="n1-comments-other-text-date">2 years ago</span><br><span
+                           class="n1-comments-other-text-writing">meow, do you know where Alice is? She is in you,
+                           before you, and on you. What the hell you made the awful story. It's time to get up.</span>
+                     </div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/白人.png" alt="白人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">little red riding
+                           hood</span><span class="n1-comments-other-text-date">4 years ago</span><br><span
+                           class="n1-comments-other-text-writing">I also think the story of slaughter play is the most
+                           disagreeable one.</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/白ウサギ.png" alt="白ウサギ">
+                     <div class="n1-comments-other-text"><span
+                           class="n1-comments-other-text-name">WhiteRabbit_Node</span><span
+                           class="n1-comments-other-text-date">1 month ago</span><br><span
+                           class="n1-comments-other-text-writing">Dinah, I'm sorry to trouble you...</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/日本人.png" alt="日本人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">Dorothy</span><span
+                           class="n1-comments-other-text-date">4 months ago</span><br><span
+                           class="n1-comments-other-text-writing">cool! I've never seen such a great video in
+                           Mtube!!!</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/黒人.png" alt="黒人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">dodo</span><span
+                           class="n1-comments-other-text-date">1 month ago</span><br><span
+                           class="n1-comments-other-text-writing">Run, run, run!!! Let's eat meat!!</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/白猫.png" alt="白猫" width="40">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">Cheshire
+                           cat</span><span class="n1-comments-other-text-date">2 years ago</span><br><span
+                           class="n1-comments-other-text-writing">meow, do you know where Alice is? She is in you,
+                           before you, and on you. What the hell you made the awful story. It's time to get up.</span>
+                     </div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/白人.png" alt="白人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">little red riding
+                           hood</span><span class="n1-comments-other-text-date">4 years ago</span><br><span
+                           class="n1-comments-other-text-writing">I also think the story of slaughter play is the most
+                           disagreeable one.</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/日本人.png" alt="日本人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">Dorothy</span><span
+                           class="n1-comments-other-text-date">4 months ago</span><br><span
+                           class="n1-comments-other-text-writing">cool! I've never seen such a great video in
+                           Mtube!!!</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/黒人.png" alt="黒人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">dodo</span><span
+                           class="n1-comments-other-text-date">1 month ago</span><br><span
+                           class="n1-comments-other-text-writing">Run, run, run!!! Let's eat meat!!</span></div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/白猫.png" alt="白猫" width="40">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">Cheshire
+                           cat</span><span class="n1-comments-other-text-date">2 years ago</span><br><span
+                           class="n1-comments-other-text-writing">meow, do you know where Alice is? She is in you,
+                           before you, and on you. What the hell you made the awful story. It's time to get up.</span>
+                     </div>
+                  </div>
+
+                  <div class="n1-comments-other">
+                     <img src="/mystudy/img/白人.png" alt="白人">
+                     <div class="n1-comments-other-text"><span class="n1-comments-other-text-name">little red riding
+                           hood</span><span class="n1-comments-other-text-date">4 years ago</span><br><span
+                           class="n1-comments-other-text-writing">I also think the story of slaughter play is the most
+                           disagreeable one.</span></div>
+                  </div>
+
+                  <div class="n1-comments-viewmore">
+                     <button class="n1-comments-viewmore-btn">View more comments</button>
+                  </div>
+
+               </div>
+               <!-- スマホ、タブレットにおいてクリックで現れるようにする -->
+            </div>
+
+
+            <div class="n1-nextmovies" id="n1-pc-column-right">
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/アルパカ.png" alt="アルパカ">
+                     <div class="n1-nextmovies-text">
+                        動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>アルパカちゃんねる&nbsp;&nbsp;&nbsp;70K views</span></div>
+                  </div>
+               </div>
+
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/ウマ.png" alt="ウマ">
+                     <div class="n1-nextmovies-text">動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>牧場動画&nbsp;&nbsp;&nbsp;52K
+                           views</span></div>
+                  </div>
+               </div>
+
+
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/ニワトリ.png" alt="ニワトリ">
+                     <div class="n1-nextmovies-text">
+                        動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>たまごインストール&nbsp;&nbsp;&nbsp;7K views</span></div>
+                  </div>
+               </div>
+
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/シカ.png" alt="シカ">
+                     <div class="n1-nextmovies-text">動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>しかしシカしか&nbsp;&nbsp;&nbsp;2M
+                           views</span></div>
+                  </div>
+               </div>
+
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/ハムスター.png" alt="ハムスター">
+                     <div class="n1-nextmovies-text">
+                        動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>ハムスターちゃんねる&nbsp;&nbsp;&nbsp;2M views</span></div>
+                  </div>
+               </div>
+
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/パニエル.png" alt="パニエル">
+                     <div class="n1-nextmovies-text">
+                        動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>トリミングのコツ&nbsp;&nbsp;&nbsp;2M views</span></div>
+                  </div>
+               </div>
+
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/ポメラニアン.png" alt="ポメラニアン">
+                     <div class="n1-nextmovies-text">
+                        動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>ポメラニアンちゃんねる&nbsp;&nbsp;&nbsp;2M views</span></div>
+                  </div>
+               </div>
+
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/ボンベイ.png" alt="ボンベイ">
+                     <div class="n1-nextmovies-text">動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>黒猫の恩返し&nbsp;&nbsp;&nbsp;2M
+                           views</span></div>
+                  </div>
+               </div>
+
+               <div class="n1-nextmovies-flexbox">
+                  <div class="n1-nextmovies-one"></div>
+                  <div class="n1-nextmovies-textbox">
+                     <img src="/mystudy/img/白い犬.png" alt="イヌ">
+                     <div class="n1-nextmovies-text">動画タイトル動画タイトル動画タイトル動画タイトル動画タイトル<br><span>ミワ_Miwa&nbsp;&nbsp;&nbsp;2M
+                           views</span></div>
+                  </div>
+               </div>
+
+            </div>
+
+         </div>
+
+      </section>
+   </article>
+   <!-- ↓↓↓定型↓↓↓ -->
+
+
+
+
+   <!-- thank you for seeing! -->
+   <section>
+      <div id="thank-you-container">
+         <div id="thank-you-finger"><i class="fa-regular fa-hand-point-right"></i></div>
+         <button id="thank-you-btn">thank you for seeing!</button>
+      </div>
+
+      <div id="thank-you-for-seeing">Thank you for seeing!</div>
+   </section>
+
+
+
+
+   <div class="footer">
+      <div class="footer-logo"><span>プログラミングひろば</span><br>© 2023 ミワ_Miwa</div>
+      <div class="footer-list">
+         <ul>
+            <li><a href="">お問い合わせ</a></li>
+            <li><a href="">プライバシーポリシー</a></li>
+            <li><a href="">ミワについて</a></li>
+         </ul>
+      </div>
+   </div>
+
+   <script src="script.js"></script>
+</body>
+
+</html>
